@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+  <head>
+    <title>Hello World!</title>
+    <script src="../../node_modules/angular/angular.js"></script>
+    <script src="../controllers/index.ctrl.js"></script>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    We are using io.js <script>document.write(process.version)</script>
+    and Electron <script>document.write(process.versions['electron'])</script>.
+    
+    <div>
+      <div ng-controller="AppCtl as ctl">
+      
+        <input type="text" ng-model="test"></input>
+          
+         {{ test }}
+         
+         {{ ctl.test }}
+      
+      </div>
+    </div>
+    
+  </body>
+</html>
